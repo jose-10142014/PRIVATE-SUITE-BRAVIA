@@ -1,0 +1,160 @@
+/* =========================================================
+   TV Launcher Theme Modes v70
+   LUXURY (existing) / HOTEL VOD (retro hotel terminal inspired)
+   External images are intentionally not used for portability.
+   ========================================================= */
+
+#themeBtn{
+  border:1px solid rgba(214,177,90,.55);
+  color:var(--gold2);
+  background:linear-gradient(180deg,#19150d,#090807);
+  padding:10px 14px;
+  border-radius:3px;
+  cursor:pointer;
+  letter-spacing:1.4px;
+  font-size:11px;
+  min-width:130px;
+}
+#themeBtn:hover,#themeBtn:focus{
+  outline:none;border-color:var(--gold2);box-shadow:0 0 14px rgba(214,177,90,.18)
+}
+.hotel-vod-panel{display:none}
+
+/* ---------- HOTEL VOD ---------- */
+html[data-launcher-theme="hotel"] body{
+  color:#4d2f20;
+  background:
+    radial-gradient(circle at 6% 9%,rgba(188,81,43,.28) 0 5px,transparent 6px 25px,rgba(177,119,44,.13) 26px 28px,transparent 29px),
+    radial-gradient(circle at 18% 14%,rgba(171,105,31,.18),transparent 17%),
+    radial-gradient(circle at 82% 12%,rgba(179,123,35,.22),transparent 19%),
+    radial-gradient(circle at 91% 86%,rgba(157,77,52,.15),transparent 20%),
+    linear-gradient(135deg,#f5e9c9 0%,#dfc383 44%,#caa35c 100%);
+}
+html[data-launcher-theme="hotel"] body::before{
+  inset:8px;border:2px solid rgba(100,58,25,.58);box-shadow:inset 0 0 0 3px rgba(255,248,220,.55)
+}
+html[data-launcher-theme="hotel"] body::after{
+  inset:14px;border:1px solid rgba(124,77,30,.22)
+}
+html[data-launcher-theme="hotel"] .ambient{
+  opacity:1;
+  background:
+    radial-gradient(ellipse at 0% 0%,rgba(255,255,255,.66),transparent 23%),
+    repeating-linear-gradient(120deg,rgba(112,64,23,.025) 0 1px,transparent 1px 8px);
+}
+html[data-launcher-theme="hotel"] header{
+  height:120px;padding:28px 52px 0;
+  background:linear-gradient(180deg,rgba(255,250,228,.70),rgba(244,226,181,.28),transparent);
+}
+html[data-launcher-theme="hotel"] .brand{
+  color:#5d2a24;font-size:34px;letter-spacing:6px;text-shadow:0 1px 0 #fff4d0,0 2px 3px rgba(80,47,20,.25)
+}
+html[data-launcher-theme="hotel"] .brand-sub{color:#8b6232;font-weight:700}
+html[data-launcher-theme="hotel"] #clock{color:#542d21;text-shadow:0 1px 0 #fff4cf}
+html[data-launcher-theme="hotel"] #fullscreenBtn,
+html[data-launcher-theme="hotel"] #themeBtn{
+  border:1px solid #825727;color:#592f21;background:linear-gradient(#fff5d5,#dfbd78);
+  box-shadow:inset 0 1px #fff,0 2px 4px rgba(84,49,20,.24);font-weight:700
+}
+html[data-launcher-theme="hotel"] #themeBtn{color:#7e251f;border-color:#a8702f}
+html[data-launcher-theme="hotel"] main{height:calc(100vh - 120px)}
+html[data-launcher-theme="hotel"] .hero{min-height:150px;padding:8px 390px 12px 275px}
+html[data-launcher-theme="hotel"] .eyebrow{
+  display:inline-block;margin-bottom:7px;padding:4px 18px;color:#fff7db;background:#6f392a;
+  border:1px solid #9c6a38;border-radius:1px;letter-spacing:5px;font-size:9px;box-shadow:0 2px 4px rgba(76,45,22,.20)
+}
+html[data-launcher-theme="hotel"] #serviceName{
+  color:#742d27;font-size:42px;letter-spacing:4px;font-weight:700;text-shadow:0 1px 0 #fff6d8,0 3px 5px rgba(110,64,24,.18)
+}
+html[data-launcher-theme="hotel"] #serviceDesc{margin-top:5px;color:#6b4826;font-weight:700;letter-spacing:1.2px;font-size:13px}
+html[data-launcher-theme="hotel"] .ornament{
+  margin-top:12px;width:360px;height:4px;background:linear-gradient(90deg,transparent,#a9662c 12%,#6f3424 50%,#a9662c 88%,transparent)
+}
+html[data-launcher-theme="hotel"] .rail-wrap{padding:0 390px 0 42px;align-items:center}
+html[data-launcher-theme="hotel"] .rail{grid-template-columns:repeat(5,minmax(128px,1fr));gap:13px}
+html[data-launcher-theme="hotel"] .app-card{
+  min-height:190px;gap:9px;border:2px solid #765022;border-radius:14px;color:#4d2d21;
+  background:linear-gradient(145deg,#fff5cf,#d7ae63);box-shadow:inset 0 2px 0 rgba(255,255,255,.85),inset 0 -6px 14px rgba(91,55,20,.16),0 5px 10px rgba(85,50,20,.28);
+  text-shadow:0 1px 0 rgba(255,255,255,.70)
+}
+html[data-launcher-theme="hotel"] .app-card::before{
+  left:8%;right:8%;height:35%;border-radius:12px 12px 55% 55%;background:linear-gradient(180deg,rgba(255,255,255,.67),rgba(255,255,255,0));opacity:.72
+}
+html[data-launcher-theme="hotel"] .app-card::after{inset:5px;border:1px solid rgba(255,255,255,.42);border-radius:9px}
+html[data-launcher-theme="hotel"] .app-card:nth-child(1){background:linear-gradient(150deg,#fff0bd 0%,#e58b4f 55%,#bd4b35 100%)}
+html[data-launcher-theme="hotel"] .app-card:nth-child(2){background:linear-gradient(150deg,#fff6c8 0%,#77c2d2 52%,#318fa4 100%)}
+html[data-launcher-theme="hotel"] .app-card:nth-child(3){background:linear-gradient(150deg,#f9ecc7 0%,#bd87c5 52%,#855798 100%)}
+html[data-launcher-theme="hotel"] .app-card:nth-child(4){background:linear-gradient(150deg,#fff0bc 0%,#8bc78b 52%,#4b9f75 100%)}
+html[data-launcher-theme="hotel"] .app-card:nth-child(5){background:linear-gradient(150deg,#fff2c7 0%,#dc8c9c 50%,#ae4d68 100%)}
+html[data-launcher-theme="hotel"] .app-card:hover,
+html[data-launcher-theme="hotel"] .app-card:focus,
+html[data-launcher-theme="hotel"] .app-card.active{
+  outline:none;transform:translateY(-5px) scale(1.025);border-color:#fff8df;
+  box-shadow:0 0 0 3px #693b24,0 0 0 6px #fff8df,0 10px 18px rgba(74,42,18,.35);filter:saturate(1.08) brightness(1.04)
+}
+html[data-launcher-theme="hotel"] .icon{color:#6e3227;font-size:37px;text-shadow:0 2px 0 rgba(255,246,215,.75)}
+html[data-launcher-theme="hotel"] .logo{color:#4e2920;font-weight:700;font-size:20px;text-shadow:0 1px 0 #fff6d6}
+html[data-launcher-theme="hotel"] .small-label{color:#694328;font-weight:700;letter-spacing:2px}
+html[data-launcher-theme="hotel"] .local-badge{border-color:#714422;background:rgba(255,246,211,.62);color:#5e3821;font-weight:700}
+html[data-launcher-theme="hotel"] .r18 .icon{border-color:#6e3b2b;background:rgba(255,244,211,.40)}
+html[data-launcher-theme="hotel"] .hint{padding:17px 0 24px;color:#66401f;font-weight:700;letter-spacing:2px;text-shadow:0 1px #f8e9bf}
+
+/* right VOD information panel */
+html[data-launcher-theme="hotel"] .hotel-vod-panel{
+  display:block;position:fixed;right:34px;top:300px;z-index:38;width:330px;padding:0 12px 12px;
+  border:2px solid #7b5429;background:rgba(248,231,187,.91);box-shadow:inset 0 0 0 2px rgba(255,255,255,.55),0 6px 14px rgba(82,48,18,.25)
+}
+html[data-launcher-theme="hotel"] .hotel-vod-head,
+html[data-launcher-theme="hotel"] .hotel-topic-head{
+  margin:0 -12px 10px;padding:7px 12px;background:linear-gradient(90deg,#72402f,#8e4a3a,#6b392d);color:#fff5d4;
+  font-family:"Yu Gothic UI","Meiryo",sans-serif;font-size:18px;font-weight:800;letter-spacing:1px;text-shadow:0 1px 2px #3e1f18
+}
+html[data-launcher-theme="hotel"] .hotel-vod-head span{color:#f8d158}
+html[data-launcher-theme="hotel"] .hotel-vod-news{display:grid;gap:6px;padding:1px 4px 11px;color:#5c3524;font-size:12px;font-weight:700;border-bottom:1px dashed #a87b47}
+html[data-launcher-theme="hotel"] .hotel-topic-head{margin-top:11px;font-size:15px;background:linear-gradient(90deg,#8b6531,#af8640,#8c6130)}
+html[data-launcher-theme="hotel"] .hotel-topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+html[data-launcher-theme="hotel"] .hotel-topic-grid div{
+  min-height:58px;padding:8px;border:1px solid #9a6f39;border-radius:6px;background:linear-gradient(#fff7dc,#e4c47f);box-shadow:inset 0 1px #fff;text-align:center
+}
+html[data-launcher-theme="hotel"] .hotel-topic-grid b{display:block;color:#7b3028;font-size:13px}
+html[data-launcher-theme="hotel"] .hotel-topic-grid span{display:block;margin-top:4px;color:#76502d;font-size:10px}
+html[data-launcher-theme="hotel"] .hotel-panel-note{margin-top:10px;text-align:center;color:#9a7443;font-size:8px;letter-spacing:1.5px}
+
+/* weather: cream hotel information card */
+html[data-launcher-theme="hotel"] .weather-panel{
+  top:126px!important;left:36px!important;width:218px!important;transform:none!important;
+  border:2px solid #8c6432!important;background:linear-gradient(145deg,rgba(255,248,218,.96),rgba(222,191,126,.96))!important;
+  color:#623a24!important;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55),0 5px 12px rgba(82,49,21,.25)!important
+}
+html[data-launcher-theme="hotel"] .weather-location{color:#7c4929!important;font-weight:700}
+html[data-launcher-theme="hotel"] .weather-temp{color:#7a2e28!important;text-shadow:0 1px #fff4d2!important}
+html[data-launcher-theme="hotel"] .weather-condition{color:#654122!important;font-weight:700}
+html[data-launcher-theme="hotel"] .weather-details{color:#76502d!important;border-top-color:rgba(105,64,30,.25)!important}
+html[data-launcher-theme="hotel"] .weather-updated{color:#9a7240!important}
+
+/* QR: placed top-right like a hotel terminal sub-panel */
+html[data-launcher-theme="hotel"] .remote-qr-panel{
+  top:122px!important;right:38px!important;bottom:auto!important;left:auto!important;width:158px!important;transform:none!important;
+  border:2px solid #80572a!important;background:linear-gradient(145deg,rgba(255,247,216,.97),rgba(219,186,116,.97))!important;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.55),0 5px 12px rgba(82,49,21,.25)!important
+}
+html[data-launcher-theme="hotel"] .remote-qr-label{color:#6d3526!important;font-weight:800!important}
+html[data-launcher-theme="hotel"] .remote-qr-note{color:#75502c!important;font-weight:700!important}
+
+@media(max-width:1500px){
+  html[data-launcher-theme="hotel"] .hero{padding-right:330px;padding-left:245px;min-height:135px}
+  html[data-launcher-theme="hotel"] .rail-wrap{padding-right:350px;padding-left:35px}
+  html[data-launcher-theme="hotel"] .rail{grid-template-columns:repeat(3,1fr);gap:10px}
+  html[data-launcher-theme="hotel"] .app-card{min-height:128px;gap:5px}
+  html[data-launcher-theme="hotel"] .icon{font-size:29px}
+  html[data-launcher-theme="hotel"] .hotel-vod-panel{right:22px;top:278px;width:300px}
+  html[data-launcher-theme="hotel"] .hotel-topic-grid div{min-height:48px;padding:5px}
+}
+
+@media(max-width:1180px){
+  html[data-launcher-theme="hotel"] .hotel-vod-panel{display:none}
+  html[data-launcher-theme="hotel"] .rail-wrap{padding:0 34px}
+  html[data-launcher-theme="hotel"] .hero{padding-left:230px;padding-right:210px}
+  html[data-launcher-theme="hotel"] .remote-qr-panel{top:112px!important;right:20px!important;transform:scale(.78)!important;transform-origin:top right!important}
+  html[data-launcher-theme="hotel"] .weather-panel{top:112px!important;left:20px!important;transform:scale(.78)!important;transform-origin:top left!important}
+}

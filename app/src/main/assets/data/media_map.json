@@ -1,0 +1,109 @@
+{
+  "channels": [
+    {
+      "id": "c0000",
+      "name": "ガキの使い",
+      "source": "https://hamada.gaki-no-tsukai.stream/hls/test.m3u8",
+      "logo": "https://image.tunagate.net/circles/main_images/000/043/737/large/2CA11B1C-A4D7-40DA-A78C-5DAF2BD4FC41.jpeg",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0001",
+      "name": "日本テレビ",
+      "source": "https://ntv5.mov3.co/hls/ntv.m3u8",
+      "logo": "https://www.ntv.co.jp/_next/static/media/logo-ntv.0eilwoxg3c02e.png",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0002",
+      "name": "フジテレビ",
+      "source": "https://fujitv4.mov3.co/hls/fujitv.m3u8",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Y1yRJoiIRHaDQ4Ef-RNN34xzPXxYRLn-fwUsE2I&s=10",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0003",
+      "name": "テレビ朝日",
+      "source": "https://tvasahi.mov3.co/hls/tvasahi.m3u8",
+      "logo": "https://i.imgur.com/YCqB5Kj.png",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0004",
+      "name": "TBS",
+      "source": "https://tbs5.mov3.co/hls/tbs.m3u8",
+      "logo": "https://i.imgur.com/dUn2GRn.png",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0005",
+      "name": "NHK G",
+      "source": "https://nhk4.mov3.co/hls/nhk.m3u8",
+      "logo": "https://www.nettv.live/uploads/allimg/20/1-20111Q443200-L.jpg",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0006",
+      "name": "NHK World-Japan (1080p)",
+      "source": "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0007",
+      "name": "QVC (1080p)",
+      "source": "https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0008",
+      "name": "Shop Channel (1080p) [Not 24/7]",
+      "source": "https://stream3.shopch.jp/HLS/master.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0009",
+      "name": "Weathernews (720p)",
+      "source": "https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0010",
+      "name": "テレビ東京",
+      "source": "https://tvtokyo.mov3.co/hls/tvtokyo.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0011",
+      "name": "TOKYO MX",
+      "source": "https://tokyomx.mov3.co/hls/tokyomx.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    },
+    {
+      "id": "c0012",
+      "name": "NHK Eテレ",
+      "source": "https://nhke.mov3.co/hls/nhke.m3u8",
+      "logo": "",
+      "group": "",
+      "playlist": "playlist\\jp0720.m3u"
+    }
+  ],
+  "videos": []
+}

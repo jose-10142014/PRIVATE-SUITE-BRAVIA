@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRIVATE SUITE - Entertainment Menu</title>
+
+    <link rel="stylesheet" href="css/style.css?v=70">
+
+  <!-- Smartphone Remote QR: 右上配置 -->
+  <style>
+    .remote-qr-panel{
+      top:120px !important;
+      right:36px !important;
+      bottom:auto !important;
+      left:auto !important;
+      transform:none !important;
+      transform-origin:top right !important;
+    }
+    .remote-qr-device{margin-top:6px;color:#c5a558;font-size:8px;line-height:1.35;letter-spacing:.55px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .remote-qr-panel.remote-offline .remote-qr-box{opacity:.28;filter:grayscale(1)}
+    .remote-qr-panel.remote-offline .remote-qr-device{color:#a06f65}
+  </style>
+
+
+  <!-- Weather Panel: さいたま市北区 -->
+  <style>
+    .weather-panel{
+      position:fixed;
+      top:122px;
+      left:36px;
+      z-index:45;
+      width:210px;
+      padding:12px 14px 11px;
+      border:1px solid rgba(214,177,90,.42);
+      border-top-color:rgba(243,223,155,.62);
+      border-left-color:rgba(214,177,90,.50);
+      border-right-color:rgba(77,57,19,.82);
+      border-bottom-color:rgba(56,40,12,.92);
+      border-radius:8px;
+      background:
+        radial-gradient(circle at 30% 0%,rgba(255,230,165,.06),transparent 42%),
+        linear-gradient(145deg,rgba(39,33,21,.94),rgba(9,8,6,.97));
+      box-shadow:
+        inset 1px 1px 0 rgba(255,235,180,.05),
+        inset -1px -1px 0 rgba(0,0,0,.70),
+        0 4px 0 rgba(48,34,11,.55),
+        0 13px 28px rgba(0,0,0,.36);
+      color:#d9bf79;
+      backdrop-filter:blur(4px);
+      pointer-events:none;
+    }
+
+    .weather-location{
+      font-family:Georgia,"Times New Roman",serif;
+      color:#b9974d;
+      font-size:9px;
+      letter-spacing:1.7px;
+      line-height:1.35;
+      margin-bottom:8px;
+    }
+
+    .weather-main{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .weather-icon{
+      width:38px;
+      text-align:center;
+      font-size:29px;
+      line-height:1;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,.5));
+    }
+
+    .weather-temp{
+      color:#f0d98f;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:29px;
+      line-height:1;
+      text-shadow:0 1px 0 #000,0 0 10px rgba(214,177,90,.18);
+    }
+
+    .weather-condition{
+      margin-top:4px;
+      color:#bca260;
+      font-size:11px;
+      letter-spacing:.6px;
+    }
+
+    .weather-details{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:5px 9px;
+      margin-top:10px;
+      padding-top:8px;
+      border-top:1px solid rgba(214,177,90,.20);
+      color:#877344;
+      font-size:9px;
+      line-height:1.4;
+      letter-spacing:.3px;
+    }
+
+    .weather-updated{
+      grid-column:1 / -1;
+      margin-top:2px;
+      color:#625535;
+      font-size:8px;
+      letter-spacing:.5px;
+    }
+
+    .weather-panel.error .weather-temp{
+      font-size:14px;
+    }
+
+    @media (max-width:1400px){
+      .weather-panel{
+        top:108px;
+        left:20px;
+        transform:scale(.9);
+        transform-origin:top left;
+      }
+    }
+
+    @media (max-width:1180px){
+      .weather-panel{
+        width:188px;
+        transform:scale(.82);
+        transform-origin:top left;
+      }
+    }
+  </style>
+
+
+  <!-- Theme mode: LUXURY / HOTEL VOD -->
+  <script>
+    (() => {
+      try {
+        const q = new URLSearchParams(location.search).get("theme");
+        const saved = localStorage.getItem("tvLauncherTheme");
+        const theme = (q === "hotel" || q === "luxury") ? q : (saved || "luxury");
+        document.documentElement.setAttribute("data-launcher-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-launcher-theme", "luxury");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/theme_modes.css?v=70">
+
+<link rel="stylesheet" href="css/android.css"></head>
+
+<body tabindex="-1">
+  <div class="ambient"></div>
+
+  <header>
+    <div class="brand-wrap">
+      <div class="brand">PRIVATE SUITE</div>
+      <div class="brand-sub">ENTERTAINMENT & RELAXATION</div>
+    </div>
+
+    <div class="top-right">
+      <div id="clock">--:--</div>
+      <button id="themeBtn" type="button" title="Mキーでも切替">MODE: LUXURY</button>
+      <button id="fullscreenBtn" type="button">全画面</button>
+    </div>
+  </header>
+
+  
+  <!-- さいたま市北区 気象状況 -->
+  <aside class="weather-panel" id="weatherPanel" aria-label="さいたま市北区の気象状況">
+    <div class="weather-location">SAITAMA CITY / KITA-KU</div>
+    <div class="weather-main">
+      <div class="weather-icon" id="weatherIcon">--</div>
+      <div>
+        <div class="weather-temp" id="weatherTemp">--°C</div>
+        <div class="weather-condition" id="weatherCondition">気象情報を取得中</div>
+      </div>
+    </div>
+    <div class="weather-details">
+      <div id="weatherHumidity">湿度 --%</div>
+      <div id="weatherRain">降水 -- mm</div>
+      <div id="weatherWind">風速 -- m/s</div>
+      <div id="weatherFeel">体感 --°C</div>
+      <div class="weather-updated" id="weatherUpdated">UPDATE --:--</div>
+    </div>
+  </aside>
+
+
+  <!-- HOTEL VODテーマ専用インフォメーション -->
+  <aside class="hotel-vod-panel" aria-hidden="true">
+    <div class="hotel-vod-head"><span>●</span> VOD NEWS</div>
+    <div class="hotel-vod-news">
+      <div>◎ タッチ・リモコン操作対応</div>
+      <div>◎ LIVE TV・ローカル動画を視聴</div>
+      <div>◎ YouTube・TVer・Prime Video</div>
+      <div>◎ MODEボタンで画面デザイン切替</div>
+    </div>
+    <div class="hotel-topic-head">HOTEL TOPICS</div>
+    <div class="hotel-topic-grid">
+      <div><b>REMOTE</b><span>十字キーで操作</span></div>
+      <div><b>LIVE TV</b><span>チャンネル一覧</span></div>
+      <div><b>VOD</b><span>動画サービス</span></div>
+      <div><b>PRIVATE</b><span>客室メニュー</span></div>
+    </div>
+    <div class="hotel-panel-note">PRIVATE SUITE ENTERTAINMENT SYSTEM</div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">WELCOME TO YOUR PRIVATE ROOM</div>
+      <h1 id="serviceName">YouTube</h1>
+      <p id="serviceDesc">オンライン動画をお楽しみください</p>
+      <div class="ornament"></div>
+    </section>
+
+    <section class="rail-wrap">
+      <div class="rail" id="appRail">
+
+        <a class="app-card active"
+           href="https://www.youtube.com/" target="_blank" rel="noopener"
+           data-name="YouTube"
+           data-desc="オンライン動画をお楽しみください">
+          <span class="icon">▶</span>
+          <span class="logo">YouTube</span>
+          <span class="small-label">ONLINE VIDEO</span>
+        </a>
+
+        <a class="app-card"
+           href="https://tver.jp/" target="_blank" rel="noopener"
+           data-name="TVer"
+           data-desc="民放テレビ番組をお楽しみください">
+          <span class="icon">TV</span>
+          <span class="logo">TVer</span>
+          <span class="small-label">CATCH-UP TV</span>
+        </a>
+
+        <a class="app-card"
+           href="https://www.amazon.co.jp/gp/video/storefront/" target="_blank" rel="noopener"
+           data-name="Prime Video"
+           data-desc="映画・ドラマをお楽しみください">
+          <span class="icon">◆</span>
+          <span class="logo">prime video</span>
+          <span class="small-label">MOVIES & DRAMA</span>
+        </a>
+
+
+        <a class="app-card" href="https://abema.tv/" data-name="ABEMA" data-desc="ABEMAを起動します"><span class="icon">▶</span><span class="logo">ABEMA</span><span class="small-label">STREAMING TV</span></a>
+        <a class="app-card" href="https://www.netflix.com/" data-name="Netflix" data-desc="Netflixを起動します"><span class="icon">N</span><span class="logo">Netflix</span><span class="small-label">MOVIES & SERIES</span></a>
+        <a class="app-card" href="https://www.ubereats.com/jp" data-name="Uber Eats" data-desc="ブラウザで注文サイトを開きます"><span class="icon">✦</span><span class="logo">Uber Eats</span><span class="small-label">FOOD DELIVERY</span></a>
+        <a class="app-card"
+           href="library.html"
+           data-name="ライブTV"
+           data-desc="ライブチャンネルを視聴します">
+          <span class="icon">▣</span>
+          <span class="logo">LIVE TV</span>
+          <span class="small-label">LIVE CHANNEL</span>
+          <span class="local-badge">LOCAL</span>
+        </a>
+
+        <a class="app-card r18"
+           id="r18Link"
+           href="https://missav.live/" target="_blank" rel="noopener"
+           data-name="R18"
+           data-desc="プライベートコンテンツ">
+          <span class="icon">R18</span>
+          <span class="logo">ADULT</span>
+          <span class="small-label">PRIVATE CONTENT</span>
+        </a>
+
+      </div>
+    </section>
+
+    <div class="hint">← → で選択　　Enterで起動　　MでMODE切替　　戻るボタンでメニューへ</div>
+  </main>
+
+  <!-- UI効果音 -->
+  <audio id="hoverSfx" preload="auto" src="audio/ui_hover.wav"></audio>
+  <audio id="selectSfx" preload="auto" src="audio/ui_select.wav"></audio>
+
+  <!-- BGM -->
+  <audio id="bgm" autoplay preload="auto" loop>
+    <source src="audio/若草の花かんむり.mp3" type="audio/mpeg">
+  </audio>
+  <script src="js/index.js?v=80"></script>
+  
+
+
+
+
+  <!-- 外部サイト表示中はBGMを停止し、戻ったら続きから再生 -->
+  <script>
+    (() => {
+      const pageBgm = document.getElementById("bgm");
+      if (!pageBgm) return;
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          pageBgm.pause();
+        } else {
+          pageBgm.play().catch(() => {
+            // Chromeの自動再生制限時は既存の操作時再生処理に任せる
+          });
+        }
+      });
+    })();
+  </script>
+
+
+  <!-- Weather data: Open-Meteo -->
+  <script>
+    (() => {
+      // さいたま市北区の代表点付近
+      const LAT = 35.93139;
+      const LON = 139.620287;
+
+      const panel = document.getElementById("weatherPanel");
+      const iconEl = document.getElementById("weatherIcon");
+      const tempEl = document.getElementById("weatherTemp");
+      const conditionEl = document.getElementById("weatherCondition");
+      const humidityEl = document.getElementById("weatherHumidity");
+      const rainEl = document.getElementById("weatherRain");
+      const windEl = document.getElementById("weatherWind");
+      const feelEl = document.getElementById("weatherFeel");
+      const updatedEl = document.getElementById("weatherUpdated");
+
+      const weatherText = (code) => {
+        const map = {
+          0:["☀","快晴"],
+          1:["🌤","晴れ"],
+          2:["⛅","一部曇り"],
+          3:["☁","曇り"],
+          45:["🌫","霧"],
+          48:["🌫","着氷性の霧"],
+          51:["🌦","弱い霧雨"],
+          53:["🌦","霧雨"],
+          55:["🌧","強い霧雨"],
+          56:["🌧","弱い着氷性霧雨"],
+          57:["🌧","着氷性霧雨"],
+          61:["🌦","弱い雨"],
+          63:["🌧","雨"],
+          65:["🌧","強い雨"],
+          66:["🌧","弱い着氷性の雨"],
+          67:["🌧","着氷性の雨"],
+          71:["🌨","弱い雪"],
+          73:["🌨","雪"],
+          75:["❄","強い雪"],
+          77:["❄","霧雪"],
+          80:["🌦","弱いにわか雨"],
+          81:["🌧","にわか雨"],
+          82:["⛈","激しいにわか雨"],
+          85:["🌨","弱いにわか雪"],
+          86:["❄","強いにわか雪"],
+          95:["⛈","雷雨"],
+          96:["⛈","ひょうを伴う雷雨"],
+          99:["⛈","激しいひょうを伴う雷雨"]
+        };
+        return map[code] || ["◌","天候不明"];
+      };
+
+      async function updateWeather() {
+        const url =
+          `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+          `&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m` +
+          `&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm&timezone=Asia%2FTokyo`;
+
+        try {
+          const response = await fetch(url, { cache: "no-store" });
+          if (!response.ok) throw new Error("weather response");
+          const data = await response.json();
+          const c = data.current;
+          if (!c) throw new Error("weather data");
+
+          const [icon, label] = weatherText(c.weather_code);
+
+          panel.classList.remove("error");
+          iconEl.textContent = icon;
+          tempEl.textContent = `${Math.round(c.temperature_2m)}°C`;
+          conditionEl.textContent = label;
+          humidityEl.textContent = `湿度 ${Math.round(c.relative_humidity_2m)}%`;
+          rainEl.textContent = `降水 ${Number(c.precipitation).toFixed(1)} mm`;
+          windEl.textContent = `風速 ${Number(c.wind_speed_10m).toFixed(1)} m/s`;
+          feelEl.textContent = `体感 ${Math.round(c.apparent_temperature)}°C`;
+
+          const time = c.time ? c.time.slice(11,16) : new Date().toLocaleTimeString("ja-JP", {
+            hour:"2-digit", minute:"2-digit"
+          });
+          updatedEl.textContent = `UPDATE ${time}`;
+        } catch (e) {
+          panel.classList.add("error");
+          iconEl.textContent = "!";
+          tempEl.textContent = "取得できません";
+          conditionEl.textContent = "インターネット接続を確認";
+          humidityEl.textContent = "湿度 --%";
+          rainEl.textContent = "降水 -- mm";
+          windEl.textContent = "風速 -- m/s";
+          feelEl.textContent = "体感 --°C";
+          updatedEl.textContent = "UPDATE ERROR";
+        }
+      }
+
+      updateWeather();
+      setInterval(updateWeather, 10 * 60 * 1000);
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) updateWeather();
+      });
+    })();
+  </script>
+
+
+
+
+<script src="js/android.js"></script></body>
+</html>
