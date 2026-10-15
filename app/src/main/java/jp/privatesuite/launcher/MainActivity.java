@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
  private static final String BASE="https://appassets.androidplatform.net/";
  private static final int VIDEO=1, PLAYLIST=2;
  private boolean foreground;
+ private boolean passwordDialogOpen=false;
  @Override public void onCreate(Bundle state) {
   super.onCreate(state);
   if((getResources().getConfiguration().uiMode & Configuration.UI_MODE_TYPE_MASK)==Configuration.UI_MODE_TYPE_TELEVISION)
@@ -38,7 +39,19 @@ public class MainActivity extends Activity {
    @Override public boolean onJsPrompt(WebView v,String u,String message,String value,JsPromptResult r){
     EditText input=new EditText(MainActivity.this);input.setSingleLine(true);input.setText(value);
     input.setInputType(18);
-    new AlertDialog.Builder(MainActivity.this).setMessage(message).setView(input).setPositiveButton("OK",(d,w)->r.confirm(input.getText().toString())).setNegativeButton("キャンセル",(d,w)->r.cancel()).setOnCancelListener(d->r.cancel()).show();return true;
+    passwordDialogOpen=true;
+    AlertDialog dialog=new AlertDialog.Builder(MainActivity.this)
+      .setMessage(message).setView(input)
+      .setPositiveButton("OK",(d,w)->r.confirm(input.getText().toString()))
+      .setNegativeButton("キャンセル",(d,w)->r.cancel())
+      .setOnCancelListener(d->r.cancel()).create();
+    dialog.setOnDismissListener(d->passwordDialogOpen=false);
+    dialog.setOnShowListener(d->{
+      input.requestFocus();
+      dialog.getButton(AlertDialog.BUTTON_POSITIVE).setFocusable(true);
+      dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setFocusable(true);
+    });
+    dialog.show();return true;
    }
   });
   web.setWebViewClient(new WebViewClient(){
@@ -79,6 +92,7 @@ public class MainActivity extends Activity {
    case KeyEvent.KEYCODE_DPAD_DOWN:key="ArrowDown";break;
    case KeyEvent.KEYCODE_DPAD_CENTER:case KeyEvent.KEYCODE_ENTER:key="Enter";break;
   }
+  if(passwordDialogOpen)return super.dispatchKeyEvent(e);
   if(key!=null&&hasWindowFocus()){if(e.getAction()==KeyEvent.ACTION_DOWN)web.evaluateJavascript("window.nativeKey&&window.nativeKey("+JSONObject.quote(key)+")",null);return true;}
   return super.dispatchKeyEvent(e);
  }
@@ -87,7 +101,7 @@ public class MainActivity extends Activity {
   Uri u=Uri.parse(value);if(!Arrays.asList("https","http").contains(u.getScheme())){toast("このリンク形式には対応していません");return;}
   String h=u.getHost()==null?"":u.getHost().toLowerCase(Locale.ROOT);
   String[] packages=(h.equals("www.youtube.com")||h.equals("youtube.com")||h.equals("m.youtube.com"))?new String[]{"com.google.android.youtube.tv","com.google.android.youtube"}:
-    (h.equals("tver.jp")||h.equals("www.tver.jp"))?new String[]{"jp.hamitv.hamiand1","jp.hamitv.hamiand1.tv"}:
+    (h.equals("tver.jp")||h.equals("www.tver.jp"))?new String[]{"jp.co.tver.tvapp","jp.hamitv.hamiand1","jp.hamitv.hamiand1.tv"}:
     (h.equals("abema.tv")||h.equals("www.abema.tv"))?new String[]{"tv.abema","tv.abema.tv","com.abema.tv"}:
     (h.equals("netflix.com")||h.equals("www.netflix.com"))?new String[]{"com.netflix.ninja","com.netflix.mediaclient"}:
     h.equals("www.amazon.co.jp")?new String[]{"com.amazon.amazonvideo.livingroom","com.amazon.avod.thirdpartyclient"}:new String[0];
