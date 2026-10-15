@@ -2,107 +2,831 @@
   "channels": [
     {
       "id": "c0000",
-      "name": "ガキの使い",
-      "source": "https://hamada.gaki-no-tsukai.stream/hls/test.m3u8",
-      "logo": "https://image.tunagate.net/circles/main_images/000/043/737/large/2CA11B1C-A4D7-40DA-A78C-5DAF2BD4FC41.jpeg",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "NHK G",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd01#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe0-011-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "NHK東京・総合_jp"
     },
     {
       "id": "c0001",
-      "name": "日本テレビ",
-      "source": "https://ntv5.mov3.co/hls/ntv.m3u8",
-      "logo": "https://www.ntv.co.jp/_next/static/media/logo-ntv.0eilwoxg3c02e.png",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "NHK E",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd02#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe1-021-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "NHK東京・教育_jp"
     },
     {
       "id": "c0002",
-      "name": "フジテレビ",
-      "source": "https://fujitv4.mov3.co/hls/fujitv.m3u8",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Y1yRJoiIRHaDQ4Ef-RNN34xzPXxYRLn-fwUsE2I&s=10",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "日本テレビ",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd03#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe2-041-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "日本テレビ_jp"
     },
     {
       "id": "c0003",
       "name": "テレビ朝日",
-      "source": "https://tvasahi.mov3.co/hls/tvasahi.m3u8",
-      "logo": "https://i.imgur.com/YCqB5Kj.png",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd06#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe5-051-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "テレビ朝日_jp"
     },
     {
       "id": "c0004",
       "name": "TBS",
-      "source": "https://tbs5.mov3.co/hls/tbs.m3u8",
-      "logo": "https://i.imgur.com/dUn2GRn.png",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd04#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe3-061-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "TBS_jp"
     },
     {
       "id": "c0005",
-      "name": "NHK G",
-      "source": "https://nhk4.mov3.co/hls/nhk.m3u8",
-      "logo": "https://www.nettv.live/uploads/allimg/20/1-20111Q443200-L.jpg",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "テレビ東京",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd07#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe6-071-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "テレ東_jp"
     },
     {
       "id": "c0006",
-      "name": "NHK World-Japan (1080p)",
-      "source": "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "フジテレビ",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd05#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe4-081-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "フジテレビ_jp"
     },
     {
       "id": "c0007",
-      "name": "QVC (1080p)",
-      "source": "https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "Tokyo MX1",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd08#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7e87-091-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "TOKYO・MX_jp"
     },
     {
       "id": "c0008",
-      "name": "Shop Channel (1080p) [Not 24/7]",
-      "source": "https://stream3.shopch.jp/HLS/master.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "Tokyo MX2",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tokyo_mx2/stream-output.m3u8?mode=hls",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7e87-093-400x400.png",
+      "group": "Tokyo",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "TOKYO・MX2_jp"
     },
     {
       "id": "c0009",
-      "name": "Weathernews (720p)",
-      "source": "https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "NHK BS",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs11#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nhkbs.jp"
     },
     {
       "id": "c0010",
-      "name": "テレビ東京",
-      "source": "https://tvtokyo.mov3.co/hls/tvtokyo.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "BS NTV",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs02#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-141-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bsnippontv.jp"
     },
     {
       "id": "c0011",
-      "name": "TOKYO MX",
-      "source": "https://tokyomx.mov3.co/hls/tokyomx.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "BS Asahi",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs03#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-151-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bsasahi.jp"
     },
     {
       "id": "c0012",
-      "name": "NHK Eテレ",
-      "source": "https://nhke.mov3.co/hls/nhke.m3u8",
-      "logo": "",
-      "group": "",
-      "playlist": "playlist\\jp0720.m3u"
+      "name": "BS TBS",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs04#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-161-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bstbs.jp"
+    },
+    {
+      "id": "c0013",
+      "name": "BS TV Tokyo",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs05#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-171-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bstvtokyo.jp"
+    },
+    {
+      "id": "c0014",
+      "name": "BS Fuji",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs06#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-181-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bsfuji.jp"
+    },
+    {
+      "id": "c0015",
+      "name": "BS 10",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/bs10/stream-output.m3u8?mode=hls",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-200-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bs10_jp"
+    },
+    {
+      "id": "c0016",
+      "name": "BS 11",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/bs11/stream-output.m3u8?mode=hls",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-211-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bs11.jp"
+    },
+    {
+      "id": "c0017",
+      "name": "BS 12",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/bs_12/stream-output.m3u8?mode=hls",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-222-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bs12トゥエルビ_jp"
+    },
+    {
+      "id": "c0018",
+      "name": "NHK BS4K",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs01#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-000b-101-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nhkbsp4k.jp"
+    },
+    {
+      "id": "c0019",
+      "name": "WOWOW Prime",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs12#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs191.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "wowowprime.jp"
+    },
+    {
+      "id": "c0020",
+      "name": "WOWOW Live",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs20#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs192.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "wowowlive.jp"
+    },
+    {
+      "id": "c0021",
+      "name": "WOWOW Cinema",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs07#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs193.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "wowowcinema.jp"
+    },
+    {
+      "id": "c0022",
+      "name": "BS 10 Premium",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs08#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs201.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bs10プレミアム_jp"
+    },
+    {
+      "id": "c0023",
+      "name": "JSport 1",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs18#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs242.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "jsports1.jp"
+    },
+    {
+      "id": "c0024",
+      "name": "JSport 2",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs19#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs243.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "jsports2.jp"
+    },
+    {
+      "id": "c0025",
+      "name": "JSport 3",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs21#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs244.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "jsports3.jp"
+    },
+    {
+      "id": "c0026",
+      "name": "JSport 4",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs22#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs245.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "jsports4.jp"
+    },
+    {
+      "id": "c0027",
+      "name": "Green Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs14#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs234.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "greenchannel.jp"
+    },
+    {
+      "id": "c0028",
+      "name": "Animax",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs15#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs236.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "animax.in"
+    },
+    {
+      "id": "c0029",
+      "name": "Nihon Eiga Senmon",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs23#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs255.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nihoneigasenmonchannel.jp"
+    },
+    {
+      "id": "c0030",
+      "name": "Fishing Vision",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs25#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs251.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "fishingvision.jp"
+    },
+    {
+      "id": "c0031",
+      "name": "WOWOW Plus",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/wowow_plus/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs252.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "wowowplus.jp"
+    },
+    {
+      "id": "c0032",
+      "name": "Disney Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs24#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs256.gif",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "disneychannel.jp"
+    },
+    {
+      "id": "c0033",
+      "name": "Jcom BS",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs31#.m3u8",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-260-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "j-com-bs_jp"
+    },
+    {
+      "id": "c0034",
+      "name": "BS Yoshimoto",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/bs_yoshimoto/stream-output.m3u8?mode=hls",
+      "logo": "https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-265-400x400.png",
+      "group": "BS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bsよしもと_jp"
+    },
+    {
+      "id": "c0035",
+      "name": "Sky A",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs01#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs250.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "skya.jp"
+    },
+    {
+      "id": "c0036",
+      "name": "GAORA",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs17#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs254.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "gaorasports.jp"
+    },
+    {
+      "id": "c0037",
+      "name": "AT-X",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/at-x/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs333.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "atx.jp"
+    },
+    {
+      "id": "c0038",
+      "name": "Space Shower TV",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=bs26#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs322.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "spaceshowertv.jp"
+    },
+    {
+      "id": "c0039",
+      "name": "MTV",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs18#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs323.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "mtv.jp"
+    },
+    {
+      "id": "c0040",
+      "name": "Mnet",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/mnet/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs318.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "mnet.jp"
+    },
+    {
+      "id": "c0041",
+      "name": "V Paradise",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/v_paradise_nsfw/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/635.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "vparadise.jp"
+    },
+    {
+      "id": "c0042",
+      "name": "The Cinema",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/the_cinema/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs227.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "thecinema.jp"
+    },
+    {
+      "id": "c0043",
+      "name": "Kayo Pops",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs13#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs329.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "kayopops.jp"
+    },
+    {
+      "id": "c0044",
+      "name": "Kids Station",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs07#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs330.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "kidsstation.jp"
+    },
+    {
+      "id": "c0045",
+      "name": "Cartoon Network",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/cartoon_network_japan/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs331.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "cartoonnetwork.jp"
+    },
+    {
+      "id": "c0046",
+      "name": "NTV G+",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/nittele_g+/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs257.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nittelegplus.jp"
+    },
+    {
+      "id": "c0047",
+      "name": "NTV Plus",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/nittele_plus/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs300.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nitteleplus.jp"
+    },
+    {
+      "id": "c0048",
+      "name": "Family Gekijo",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs20#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs293.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "familygekijyo.jp"
+    },
+    {
+      "id": "c0049",
+      "name": "Mondo TV",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs21#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs295.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "mondotv.jp"
+    },
+    {
+      "id": "c0050",
+      "name": "TBS Channel 1",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tbs_channel_1/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs296.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tbschannel1.jp"
+    },
+    {
+      "id": "c0051",
+      "name": "TBS Channel 2",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tbs_channel_2/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs297.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tbschannel2.jp"
+    },
+    {
+      "id": "c0052",
+      "name": "TV Asahi Channel 1",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tv_asahi_channel_1/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs298.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tvasahichannel1.jp"
+    },
+    {
+      "id": "c0053",
+      "name": "TV Asahi Channel 2",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tv_asahi_channel_2/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs299.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tvasahichannel2.jp"
+    },
+    {
+      "id": "c0054",
+      "name": "Fuji TV One",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/fuji_tv_one/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs307.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "fujitvone.jp"
+    },
+    {
+      "id": "c0055",
+      "name": "Fuji TV Two",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/fuji_tv_two/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs308.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "fujitvtwo.jp"
+    },
+    {
+      "id": "c0056",
+      "name": "Fuji TV Next",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs26#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs309.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "fujitvnext.jp"
+    },
+    {
+      "id": "c0057",
+      "name": "Neco Channel",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/neco_ch/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs223.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "channelneco.jp"
+    },
+    {
+      "id": "c0058",
+      "name": "Dlife",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/dlife/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs312.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "dlife.jp"
+    },
+    {
+      "id": "c0059",
+      "name": "Toei Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs27#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs218.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "toeichannel.jp"
+    },
+    {
+      "id": "c0060",
+      "name": "Fighting TV Samurai",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/fighting_tv_samurai/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/600.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "fightingtvsamurai.jp"
+    },
+    {
+      "id": "c0061",
+      "name": "Me-Tele Next",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/me-tele_next/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs301.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "entermeitele.jp"
+    },
+    {
+      "id": "c0062",
+      "name": "Sport live plus",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/sport_live_plus/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/580.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "sportsliveplus.jp"
+    },
+    {
+      "id": "c0063",
+      "name": "Shogi Channel",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/shogi_channel/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs363.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "igoshogichannel.jp"
+    },
+    {
+      "id": "c0064",
+      "name": "Home Drama Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs05#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs294.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "homedramachannel.jp"
+    },
+    {
+      "id": "c0065",
+      "name": "Channel Ginga",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs29#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs305.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "channelginga.jp"
+    },
+    {
+      "id": "c0066",
+      "name": "Tabi Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs12#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/544.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tabichannel.jp"
+    },
+    {
+      "id": "c0067",
+      "name": "Tetsudo Channel",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/tetsudo_channel/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/546.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tetsudochannel.jp"
+    },
+    {
+      "id": "c0068",
+      "name": "Music On!",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/music_on_tv/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs325.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "musicontv.jp"
+    },
+    {
+      "id": "c0069",
+      "name": "Music Air",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/music_air/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs324.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "musicair.jp"
+    },
+    {
+      "id": "c0070",
+      "name": "Action Channel",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/action_channel/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs311.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "axn.jp"
+    },
+    {
+      "id": "c0071",
+      "name": "Mystery Channel",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/mystery_channel/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs316.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "mysterychannel.jp"
+    },
+    {
+      "id": "c0072",
+      "name": "Shop Channel",
+      "source": "https://stream3.shopch.jp/HLS/master.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/523.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "shopchannel.jp"
+    },
+    {
+      "id": "c0073",
+      "name": "QVC",
+      "source": "https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/525.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "qvc.jp"
+    },
+    {
+      "id": "c0074",
+      "name": "GSTV",
+      "source": "https://rch01e-alive-hls.akamaized.net/15bcd044c531aa99/out/v1/339db39dc83c421f94a8cebb777e4d02/index.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/527.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "gstv.jp"
+    },
+    {
+      "id": "c0075",
+      "name": "Jidaigeki Senmon",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs04#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs292.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "jidaigekisenmonchannel.jp"
+    },
+    {
+      "id": "c0076",
+      "name": "Eisei Gekijo",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs22#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs219.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "eiseigekijo.jp"
+    },
+    {
+      "id": "c0077",
+      "name": "Movie Plus",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs14#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs240.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "movieplus.jp"
+    },
+    {
+      "id": "c0078",
+      "name": "Golf Network",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs03#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs262.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "golfnetwork.jp"
+    },
+    {
+      "id": "c0079",
+      "name": "Music Japan",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs06#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/639.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "musicjapantv.jp"
+    },
+    {
+      "id": "c0080",
+      "name": "LaLa TV",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs19#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs314.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "lalatv.jp"
+    },
+    {
+      "id": "c0081",
+      "name": "Sky Stage",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs28#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs290.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "takarazukaskystage.jp"
+    },
+    {
+      "id": "c0082",
+      "name": "National Geographic",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs10#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs343.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "nationalgeographic.jp"
+    },
+    {
+      "id": "c0083",
+      "name": "Disney Junior",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs23#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs339.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "disneyjunior.jp"
+    },
+    {
+      "id": "c0084",
+      "name": "Discovery",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs08#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs340.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "discoverychannelsoutheastasia.sg@japan"
+    },
+    {
+      "id": "c0085",
+      "name": "Animal Planet",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs24#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs341.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "animalplanet.jp"
+    },
+    {
+      "id": "c0086",
+      "name": "History Channel",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs09#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs342.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "history.jp"
+    },
+    {
+      "id": "c0087",
+      "name": "KNTV",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/kntv/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/premium/657.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "kntv.jp"
+    },
+    {
+      "id": "c0088",
+      "name": "NTV News24",
+      "source": "https://akariko−bck1.sankuria.sbs/stream/jp/ntv_news24/stream-output.m3u8?mode=hls",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs349.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "ntvnews24.jp"
+    },
+    {
+      "id": "c0089",
+      "name": "CNNj",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs16#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs354.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "cnnj.jp"
+    },
+    {
+      "id": "c0090",
+      "name": "BBC News",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs15#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs353.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "bbcnews.uk@asiapacific"
+    },
+    {
+      "id": "c0091",
+      "name": "TBS News",
+      "source": "https://naori-test.netgenx.site/pxx.php?shk_cid=cs11#.m3u8",
+      "logo": "https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs351.gif",
+      "group": "CS",
+      "playlist": "jp_relay 0819C.m3u",
+      "tvg_id": "tbsnewscs.jp"
     }
   ],
   "videos": []
