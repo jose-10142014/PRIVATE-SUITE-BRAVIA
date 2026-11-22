@@ -158,13 +158,44 @@ public class MainActivity extends Activity {
   EditText input=new EditText(this);input.setSingleLine(true);input.setHint("https://…");input.setInputType(17);
   new AlertDialog.Builder(this).setTitle("動画・配信URL").setView(input).setPositiveButton("再生",(d,w)->play(input.getText().toString().trim())).setNegativeButton("キャンセル",null).show();
  }
+ private String channelsWithUpdates(){
+  SharedPreferences prefs=getPreferences(0);
+  String saved=prefs.getString("channels","");
+  String yamagataKey="channels_yamagata_20261122";
+  String additionKey="channels_fasttv_plutotv_20261122";
+  boolean addYamagata=!prefs.getBoolean(yamagataKey,false);
+  boolean addFastPluto=!prefs.getBoolean(additionKey,false);
+  if(!addYamagata&&!addFastPluto)return saved;
+  if(!saved.isEmpty()){
+   try(InputStream in=getAssets().open("data/media_map.json")){
+    ByteArrayOutputStream bytes=new ByteArrayOutputStream();
+    byte[] buffer=new byte[8192];int count;
+    while((count=in.read(buffer))!=-1)bytes.write(buffer,0,count);
+    JSONArray channels=new JSONArray(saved);
+    Set<String> sources=new HashSet<>();
+    for(int i=0;i<channels.length();i++)sources.add(channels.getJSONObject(i).optString("source"));
+    JSONArray defaults=new JSONObject(new String(bytes.toByteArray(),StandardCharsets.UTF_8)).getJSONArray("channels");
+    for(int i=0;i<defaults.length();i++){
+     JSONObject channel=defaults.getJSONObject(i);
+     boolean pendingYamagata=addYamagata&&"yamagata.m3u".equals(channel.optString("playlist"));
+     boolean pendingAddition=addFastPluto&&"fasttv-plutotv-20261122".equals(channel.optString("addedIn"));
+     if((pendingYamagata||pendingAddition)&&sources.add(channel.getString("source")))channels.put(channel);
+    }
+    saved=channels.toString();
+    prefs.edit().putString("channels",saved).putBoolean(yamagataKey,true).putBoolean(additionKey,true).apply();
+    return saved;
+   }catch(IOException|JSONException ex){return saved;}
+  }
+  prefs.edit().putBoolean(yamagataKey,true).putBoolean(additionKey,true).apply();
+  return saved;
+ }
  public class Bridge{
   @JavascriptInterface public void openExternal(String u){runOnUiThread(()->external(u));}
   @JavascriptInterface public void playMedia(String u){runOnUiThread(()->play(u));}
   @JavascriptInterface public void pickVideo(){runOnUiThread(()->pick(VIDEO));}
   @JavascriptInterface public void pickPlaylist(){runOnUiThread(()->pick(PLAYLIST));}
   @JavascriptInterface public void enterUrl(){runOnUiThread(()->urlDialog());}
-  @JavascriptInterface public String channels(){return getPreferences(0).getString("channels","");}
+  @JavascriptInterface public String channels(){return channelsWithUpdates();}
   @JavascriptInterface public void resetChannels(){getPreferences(0).edit().remove("channels").apply();runOnUiThread(()->web.reload());}
  }
 }

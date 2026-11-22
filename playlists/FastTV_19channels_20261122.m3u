@@ -1,0 +1,41 @@
+#EXTM3U
+# PRIVATE SUITE - full channel list - 2026-11-22 JST
+# Includes all Pluto TV US 400 entries and FastTV 19 entries, including previously unavailable URLs.
+#EXTINF:-1 tvg-id="fastch_v2_news1" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/news1/channel_logo" group-title="FastTV",丸ごと九州ch
+https://livetv.fastv.jp/channel_assembly/696090F573F51039B31F/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_hokkaido" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/hokkaido/channel_logo" group-title="FastTV",丸ごと北海道ch
+https://livetv.fastv.jp/channel_assembly/69998D0964B83951E552/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_tokai" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/tokai/channel_logo" group-title="FastTV",東海ロキポch
+https://livetv.fastv.jp/channel_assembly/69998DB5725E30535DA6/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_kids" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/kids/channel_logo" group-title="FastTV",アニマックスFREE
+https://livetv.fastv.jp/channel_assembly/69608FB2725E0FA3B972/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_comdy" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/comdy/channel_logo" group-title="FastTV",Lemino TV
+https://livetv.fastv.jp/channel_assembly/696082290000105F1525/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_samri" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/samri/channel_logo" group-title="FastTV",時代劇TV
+https://livetv.fastv.jp/channel_assembly/696074B664B80F46A876/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_travl" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/travl/channel_logo" group-title="FastTV",今日のごはん、なに？
+https://livetv.fastv.jp/channel_assembly/696095BC725E0FE5F3E9/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_recip" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/recip/channel_logo" group-title="FastTV",観るたび
+https://livetv.fastv.jp/channel_assembly/6960965C64B80F2C027D/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_camng" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/camng/channel_logo" group-title="FastTV",キャンプ・アウトドアチャンネル
+https://livetv.fastv.jp/channel_assembly/69607E1D725E0FB5AC23/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_bgolf" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/bgolf/channel_logo" group-title="FastTV",GOLF LIFE
+https://livetv.fastv.jp/channel_assembly/69607D5C725E103DDF9D/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_jpthp" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/jpthp/channel_logo" group-title="FastTV",ぴあ落語ざんまい
+https://livetv.fastv.jp/channel_assembly/69608EE9725E0F73BF30/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_goshogi" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/goshogi/channel_logo" group-title="FastTV",囲碁・将棋ライト
+https://livetv.fastv.jp/channel_assembly/69998C7B725E30DA4170/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_asdrm" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/asdrm/channel_logo" group-title="FastTV",エンタメ・アジアFree
+https://livetv.fastv.jp/channel_assembly/696078CF64B81069221E/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_krdrm" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/krdrm/channel_logo" group-title="FastTV",韓流チャンネル
+https://livetv.fastv.jp/channel_assembly/6960905473F5101B6A17/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_pett1" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/pett1/channel_logo" group-title="FastTV",ペットTV
+https://livetv.fastv.jp/channel_assembly/69551F080000E209AD09/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_snyon" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/snyon/channel_logo" group-title="FastTV",FASHION＋
+https://livetv.fastv.jp/channel_assembly/69609952725E0FA3B987/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_busns" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/busns/channel_logo" group-title="FastTV",ビジネス・プレミアムチャンネル
+https://livetv.fastv.jp/channel_assembly/69607EBD725E0F65BEE4/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_entns" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/entns/channel_logo" group-title="FastTV",エンタメニュース（ORICON NEWS）
+https://livetv.fastv.jp/channel_assembly/6960899D64B80F9C740C/master.m3u8
+#EXTINF:-1 tvg-id="fastch_v2_17live" tvg-logo="https://d212zhwse9xz9.cloudfront.net/public/v2/channels/17live/channel_logo" group-title="FastTV",Fast TV NEWS Powered by 17LIVE
+https://livetv.fastv.jp/channel_assembly/699989FA00007532CED8/master.m3u8

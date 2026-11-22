@@ -1,0 +1,25 @@
+{
+  "app/build.gradle": {
+    "after_sha256": "129f428c1ffb618ac9dfae70aa5ad247e4e5325401f81448e0e29188adb21113",
+    "before_sha256": "c6a73dbb5edc492d69b7f210ad4a0c38da0f0a3969f53741cc4c5dd59cc56fa2"
+  },
+  "app/src/main/AndroidManifest.xml": {
+    "after_sha256": "12d1067e9a22b500e3898a61dcc17c6d499d7f8c6df8714397ffc76b212cb194",
+    "before_sha256": "b834474603c4699a6f9b209f83036bb5f471b9012fdb26e1544486ff768fc704"
+  },
+  "app/src/main/assets/data/library_data.js": {
+    "after_sha256": "790ed411a7723990ede7a2c48c231b1ddfb7957166eae051e3516d327f976b44",
+    "before_sha256": "3bd6116cdcb19e54aba4178db6edcd3ac01c333e5a80d7b1bb8246e257588200"
+  },
+  "app/src/main/assets/data/media_map.json": {
+    "after_sha256": "3b03525a9657219b994427bb9d01bfa2cbfa9e5d69a508319c16a3f6a0c0ccf9",
+    "before_sha256": "6d9ac40fbe47f027f1fdc99a954079749766506b7f8867f185a577543d288782"
+  },
+  "app/src/main/java/jp/privatesuite/launcher/MainActivity.java": {
+    "after_sha256": "49355ade1ffd950ebfce156560015470de06a32448649c233af177d1e5d692d6",
+    "before_sha256": "e5e6bfcd991f0d3390efc22d599753d0a84e81f4d40689dd240f26bad13fa8ed"
+  },
+  "app/src/main/assets/library.html": {
+    "after_sha256": "5160639084dc1eb42dbea29c47d9037b02cbe6e4906c08e6cfd822f16cfbeb4a"
+  }
+}
